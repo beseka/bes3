@@ -658,6 +658,10 @@ html, body {
     padding: 0;
     height: auto;
   }
+
+  .button-part-about button,.experience-details button{
+    color: white;
+  }
 }
 
 
