@@ -1,0 +1,663 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  scroll-behavior: smooth;
+
+}
+
+.main-container,
+.about-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+/* Arka plan ortak */
+.splash-background {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.splash-background2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.splash-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.about-content{
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  padding-left: 40%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.splash-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.splash-content button{
+  background-color: #111;
+  width: 100%;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.splash-content button:hover {
+  transform: translateY(-2px);
+  background-color: #222;
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;     /* Üst kısmı öncelikli gösterir */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-part-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.button-part-about button, .project-row button {
+  border-radius: 20px;
+}
+
+/* Projeler ve Deneyimler bölümü */
+
+.projects-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.splash-background3 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.projects-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rem;
+  padding-right: 1%;
+  padding-top: 1%;
+  flex-wrap: wrap;
+}
+
+/* Ortak stil */
+.project-list,
+.experience-list {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+
+.project-list h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.experience-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-list ul,
+.experience-list ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.project-list li,
+.experience-list li {
+  margin-bottom: 0.8rem;
+}
+
+.project-list li::marker,
+.experience-list li::marker {
+  color: #464646;
+}
+
+.project-list ul,
+.experience-list ul {
+  list-style: none;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.project-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.experience-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-list li::before,
+.experience-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  width: 10px;
+  height: 10px;
+  background-color: #464646; /* Nokta rengi */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.project-list li::after,
+.experience-list li::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1.2rem;
+  width: 2px;
+  height: calc(100% - 1.2rem);
+  background-color: #464646; /* Çizgi rengi */
+  z-index: 0;
+}
+
+.project-list li:last-child::after,
+.experience-list li:last-child::after {
+  display: none; /* Son elemandan sonra çizgi olmasın */
+}
+
+.experience-details{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.experience-details button {
+  border-radius: 20px;
+
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  
+}
+.social-icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.skills-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.splash-background4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skills-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.skills-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.skill-button {
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-button:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.foot {
+  text-align: center;
+  padding-top: 2.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.main-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.main-container,
+.about-section,
+.projects-section,
+.skills-section {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  height: 100vh;
+}
+
+
+
+
+.side-navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.side-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-navbar li {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 5px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ccc;
+  font-size: 0.9rem;
+  border-radius: 5px 0 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.side-navbar li.active {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+.side-navbar li:hover {
+
+  font-weight: bold;
+}
+.projects-mobile-summary {
+  display: none;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.projects-mobile-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-mobile-summary p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Mobil uyum */ 
+@media (max-width: 768px) {
+  .main-container,
+  .about-section {
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .splash-background {
+    left: 90%;
+    width: 1500px;
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  .splash-content,
+  .about-content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .splash-content h1 {
+    font-size: 3rem;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .splash-content p,
+  .about-content p {
+    font-size: 1rem;
+  }
+  .splash-background2{
+    opacity: 0.3;
+    left: 50%;
+  }
+  .projects-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5%;
+  }
+
+  .project-list,
+  .experience-list {
+    width: 100%;
+    padding: 0;
+  }
+
+  .project-list ul,
+  .experience-list ul {
+    padding-left: 1rem;
+    font-size: 0.95rem;
+  }
+  .projects-content,
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-list,
+  .experience-list {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .skills-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .skill-button {
+    min-width: 40%;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .splash-content h1 {
+    font-size: 2rem;
+  }
+
+  .splash-content p {
+    font-size: 1rem;
+  }
+
+  .side-navbar {
+    display: none; /* İsteğe bağlı: mobilde gizlenebilir */
+  }
+  .project-list,
+  .experience-list {
+    display: none;
+  }
+
+  .projects-mobile-summary {
+    display: block;
+  }
+  .splash-background3 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+  }
+  .splash-background4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .skills-section {
+    min-height: 100vh;
+    height: auto;
+    padding: 1rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Yaymak için */
+    align-items: center;
+  }
+
+  .skills-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Dikey boşlukla yay */
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .skills-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+  }
+
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin: 0.4rem 0;
+  }
+
+  .skill-button {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    max-width: 45%;
+    text-align: center;
+  }
+
+  .foot {
+    font-size: 0.65rem;
+    margin-top: 0rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ortalar */
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .project-list,
+  .experience-list {
+    display: none;
+  }
+
+  .projects-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-content p {
+    font-size: 0.95rem;
+    color: #ccc;
+    max-width: 90%;
+    line-height: 1.4;
+  }
+
+  .experience-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .experience-details button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .projects-mobile-summary{
+    padding-left: 10%;
+  }
+  .projects-mobile-summary h2 {
+    padding-bottom: 1rem;
+  }
+  .skills-section {
+    padding: 0;
+    height: auto;
+  }
+}
+
+

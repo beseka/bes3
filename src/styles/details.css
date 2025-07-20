@@ -1,0 +1,457 @@
+.details-page {
+  padding: 60px 8% ;
+  padding-right: 8%;
+
+  color: #121212;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section {
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+/* === 1. ABOUT === */
+.aboutpart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.education-detailssu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+.su{
+    width: 70px;
+    height: 70px;
+}
+
+.education-detailssu p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-bottom: 2%;
+}
+
+.profile-image2{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: bottom;     /* Üst kısmı öncelikli gösterir */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  margin-top: 23px;
+  margin-left: 13px;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #f5f5f5;
+  
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f5f5f5;
+}
+.about-right h2,p {
+  margin: 0;
+  padding: 20px;
+}
+
+/* === 2. EXPERIENCE === */
+.experience-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.experience-left,
+.experience-right {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f5f5f5;
+}
+.experience-left h2,p {
+  margin: 0;
+  padding: 20px;
+}
+.experience-right h2,p {
+  margin: 0;
+  padding: 20px;
+}
+.beko {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.beko img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.beko p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-bottom: 2%;
+}
+
+/* === 3. PROJECTS === */
+
+.section projects-section2 {
+  padding: 0;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: #121212;
+}
+
+.project-card:hover {
+  background-color: #eaeaea;
+  transform: scale(1.02);
+}
+
+
+/* === 4. ACTIVITIES & SKILLS === */
+.activities-skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-left,
+.activities-right {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f5f5f5;
+}
+
+
+.skills-left,
+.activities-right {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f5f5f5;
+}
+
+.skills-left h2,p {
+  margin: 0;
+  padding: 20px;
+}
+
+.activities-right h2,p {
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0%;
+}
+
+.skills-left ul,
+.activities-right ul {
+  padding-left: 40px;
+}
+
+
+.c422 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.c422 h2 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+.c42 {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+#cp42 {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+  color: #121212;
+}
+
+.join-button1 {
+  background-color: #ffffff;           /* açık zemin */
+  color: #111111;                      /* koyu yazı rengi */
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border: 1px solid #f5f5f5;              /* ince, yumuşak kenarlık */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.join-button1:hover {
+  transform: translateY(-2px);
+  background-color: #f2f2f2;           /* açık gri hover efekti */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #111111;
+}
+
+
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header-left {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #111;
+  padding-left: 5%;
+}
+
+.header-right {
+  padding-right: 5%;
+}
+
+.header-right a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+}
+
+.header-right a:hover {
+  color: #000;
+}
+
+.foote {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+
+  margin-top: 40px;
+}
+
+
+.social-icon2 {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+
+}
+.social-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* taşma varsa alt satıra geçsin */
+}
+.social-icon3{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+.wirting{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.wirting a {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/* === Responsive === */
+@media (max-width: 768px) {
+  .details-page {
+    padding: 40px 5%;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 5%;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  .header-right a {
+    margin-left: 0;
+  }
+
+  .aboutpart,
+  .experience-section,
+  .activities-skills-section {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right,
+  .experience-left,
+  .experience-right,
+  .skills-left,
+  .activities-right {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    font-size: 0.95rem;
+  }
+
+  .profile-image2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .education-detailssu,
+  .beko {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .beko img,
+  .su {
+    width: 50px;
+    height: 50px;
+  }
+
+  .c42 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .join-button1 {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+
+  .wirting {
+    gap: 6px;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .social-icon2,
+  .social-icon3 {
+    width: 26px;
+    height: 26px;
+  }
+
+  .header-left {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-description,
+  #cp42,
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .foote {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+
+  .about-left {
+    flex-direction: column;
+    align-items: center; /* opsiyonel: ortalamak istersen */
+    text-align: center;  /* metni ortalamak için */
+  }
+
+  .wirting {
+    align-items: center; /* yazıyı ortalamak için */
+  }
+
+  .about-description {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+  .profile-image2 {
+    width: 200px;
+    height: 200px;
+  }
+  .su {
+    width: 60px;
+    height: 60px;
+    padding-left: 5%;
+  }
+}
+
