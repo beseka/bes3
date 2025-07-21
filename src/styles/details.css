@@ -283,27 +283,6 @@ html {
   margin-top: 40px;
 }
 
-
-.social-icon2 {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  margin-bottom: 0px;
-
-}
-.social-links{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap; /* taşma varsa alt satıra geçsin */
-}
-.social-icon3{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-    padding-left: 10px;
-}
 .wirting{
     display: flex;
     flex-direction: column;

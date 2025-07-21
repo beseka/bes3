@@ -45,18 +45,6 @@ const DetailsPage = () => {
                         Data Science and analtics, AI / ML ve web geliştirme gibi alanlara ilgi duyuyorum ve
                         eğitimim boyunca edindiğim bilgi ve deneyimleri projelerimde uygulayarak sürekli olarak kendimi geliştirmeye çalışıyorum.
                     </p>
-
-                    <div className="social-links">
-                        <p> <strong>bsirhatk@gmail.com</strong></p> 
-                        <p> <strong>+90 549 202 02 58</strong></p>
-                        <a href="https://www.linkedin.com/in/bar%C4%B1%C5%9F-serhat-kaplan-15416a230/" target="_blank" rel="noopener noreferrer">
-                            <img src={lin} alt="linkedin" className="social-icon3" />
-                        </a>
-                        <a href="https://www.github.com/beseka" target="_blank" rel="noopener noreferrer">
-                            <img src={git} alt="github" className="social-icon2" />
-                        </a>
-                        
-                    </div>
                         
                 </div>
             </div>
