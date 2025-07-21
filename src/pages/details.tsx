@@ -6,8 +6,6 @@ import beko from '../assets/beko.jpeg';
 import gen from '../assets/images.png';
 import st from '../assets/st.png';
 import c42 from '../assets/c42.jpg';
-import lin from '../assets/in.jpg';
-import git from '../assets/git.png'
 
 const DetailsPage = () => {
     const projects = [
