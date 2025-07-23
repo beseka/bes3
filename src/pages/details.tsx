@@ -6,8 +6,13 @@ import beko from '../assets/beko.jpeg';
 import gen from '../assets/images.png';
 import st from '../assets/st.png';
 import c42 from '../assets/c42.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const DetailsPage = () => {
+    const navigate = useNavigate();
+    const go = () => {
+        navigate('/');
+    };
     const projects = [
   { title: "Can you make it even more sustainable?", desc: "Şubat 2024 - Haziran 2024 \n• Araştırma Projesi \n• U.S çevresel performans ve emisyon trendlerini EPI verilerine ve sürdürülebilirlik tehlikelerine göre araştırdık\n• Araştırma sonunda emisyon oranlarını düşürmek ve EPI skorlarını geliştirmek için karbon vergileri ve yenilebilir enerji uygulamalarına yönelik toplumsal çözümler ürettik ve sunduk."},
   { title: "Enflasyon ve Borsa Fiyatları ", desc: "Ekim 2023 - Ocak 2024 \n • Veri Bilimi Projesi \n• U.S enflasyon verileri ve Apple borsa fiyatlarını analiz ederek aralarındaki korelasyonu Python ile tanımlamaya çalıştım.\n• Matplotlib, pandas ve numpy gibi kütüphanelerle veri görselleştirme, hipotez testi ve Desicion Tree modeller ile makine öğrenmesini kullanarak sonuçları tahmin ettim. " },
@@ -22,18 +27,30 @@ const DetailsPage = () => {
   return (
     <>
         <header className="page-header">
-            <div className="header-left">Barış Serhat Kaplan</div>
+            <div className="header-left" style={{ cursor: 'pointer' }} onClick={go}>
+                Barış Serhat Kaplan
+            </div>
             <nav className="header-right">
-                <a href="#aboutpart">Hakkımda</a>
-                <a href="#projectspart">Projeler</a>
-                <a href="#skillspart">Sosyal</a>
+                <a onClick={() => {
+                    document.getElementById('abouttpart')?.scrollIntoView({ behavior: 'smooth' });
+                    }}>Hakkımda
+                </a>
+                <a onClick={() => {
+                    document.getElementById('projectsspart')?.scrollIntoView({ behavior: 'smooth' });
+                    }}>Projeler
+                </a>
+
+                <a onClick={() => {
+                    document.getElementById('skillspart')?.scrollIntoView({ behavior: 'smooth' });
+                    }}>Sosyal
+                </a>
             </nav>
         </header>
         <div className="details-page">
         
 
         {/* 1. ABOUT */}
-        <section id="aboutpart "className="section aboutpart">
+        <section id="abouttpart" className="section aboutpart">
             <div className="about-left">
                 <img src={me} alt="Barış Serhat Kaplan" className="profile-image2" />   
                 <div className="wirting">     
@@ -87,7 +104,7 @@ const DetailsPage = () => {
         </section>
 
         {/* 3. PROJECTS */}
-        <section id="projectspart" className="section projects-section2">
+        <section id="projectsspart" className="section projects-section2">
             <h2>Projeler</h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (

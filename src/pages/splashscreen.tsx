@@ -220,6 +220,15 @@ const SplashScreen = () => {
               <button key={`r4-${i}`} className="skill-button">{skill}</button>
             ))}
           </div>
+
+          <div className="skills-mobile">
+            {[
+              "Data Science", "Data Analytics", "Software Development", "Python",
+              "R", "Database", "Microsoft Excel", "PowerBI","C++"
+            ].map((skill, i) => (
+              <button key={`mobile-${i}`} className="skill-button mobile-skill">{skill}</button>
+            ))}
+          </div>
           
         </div>
         <p className='foot'>Made with 💻 and ☕ by beseka. ©  All rights reserved</p>

@@ -122,7 +122,7 @@
 
 /* === 3. PROJECTS === */
 
-.section projects-section2 {
+.section.projects-section2 {
   padding: 0;
   text-align: left;
 }
@@ -162,6 +162,14 @@
   background-color: #f5f5f5;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-right a{
+  cursor: pointer;
+}
 
 .skills-left,
 .activities-right {

@@ -442,9 +442,17 @@ html, body {
   color: #ccc;
   margin-bottom: 1.5rem;
 }
+.skills-mobile {
+  display: none;
+}
+.skills-row {
+  display: block;
+}
+
 
 /* Mobil uyum */ 
 @media (max-width: 768px) {
+
   .main-container,
   .about-section {
     justify-content: center;
@@ -664,6 +672,36 @@ html, body {
 
   .button-part-about button,.experience-details button{
     color: white;
+  }
+
+  .skills-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 1rem; 
+  padding-bottom: 20px;
+  }
+
+  .mobile-skill {
+    width: 80%;               /* Tüm butonlar aynı genişlikte */
+    max-width: 300px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    border: none;
+    padding-bottom: 20px;
+  }
+
+  .skills-row {
+    display: none;
+  }
+  .skills-section {
+    justify-content: center;
   }
 }
 
