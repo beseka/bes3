@@ -28,7 +28,7 @@ const DetailsPage = () => {
     <>
         <header className="page-header">
             <div className="header-left" style={{ cursor: 'pointer' }} onClick={go}>
-                Barış Serhat Kaplan
+                BSK
             </div>
             <nav className="header-right">
                 <a onClick={() => {

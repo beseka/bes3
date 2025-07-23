@@ -240,10 +240,8 @@
   color: #111111;
 }
 
-
-
 .page-header {
-  position: sticky;
+
   top: 0;
   z-index: 1000;
   background-color: #ffffff;
@@ -252,7 +250,7 @@
   align-items: center;
   padding: 16px 5%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  font-family: 'Segoe UI', sans-serif;
+  justify-content: center;
 }
 html {
   scroll-behavior: smooth;
@@ -262,24 +260,20 @@ html {
   font-weight: 700;
   font-size: 1.2rem;
   color: #111;
-  padding-left: 5%;
-}
-
-.header-right {
-  padding-right: 5%;
+  padding-right: 10px;
 }
 
 .header-right a {
-  margin-left: 30px;
   text-decoration: none;
   color: #333;
   font-weight: 500;
   transition: color 0.2s ease;
+  padding-left: 20px;
 
 }
 
 .header-right a:hover {
-  color: #000;
+  color: #121212;
 }
 
 .foote {
@@ -309,17 +303,18 @@ html {
   }
 
   .page-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;          /* ✅ Artık yatay */
+    align-items: center;          /* Ortalanmış görünüm */
+    justify-content: center;
     padding: 12px 5%;
   }
 
   .header-right {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-right: 0;
-    margin-top: 10px;
+    flex-direction: row;          /* ✅ Yatay hizalama */
+    padding-left: 20px;
+    margin-top: 0;
+
   }
 
   .header-right a {
@@ -380,23 +375,7 @@ html {
   .wirting {
     gap: 6px;
   }
-
-  .social-links {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .social-icon2,
-  .social-icon3 {
-    width: 26px;
-    height: 26px;
-  }
-
-  .header-left {
-    padding-left: 0;
-    font-size: 1rem;
-  }
+  
 
   h2 {
     font-size: 1.1rem;
@@ -439,6 +418,11 @@ html {
     width: 60px;
     height: 60px;
     padding-left: 5%;
+  }
+  .header-left {
+    padding-left: 0;
+    text-align: center;
+
   }
 }
 

@@ -100,7 +100,7 @@ const SplashScreen = () => {
           style={{ backgroundImage: `url(${backgroundImage2})` }}
         />
         <div className="about-content">
-          <img src={me} alt="Barış Serhat Kaplan" className="profile-image" />
+          <img src={me} alt="Barış Serhat Kaplan" className="profile-image" onClick={goToDetails}/>
           <h2>Hakkımda</h2>
           <p>+90 549 202 02 58 ,  bsirhatk@gmail.com, İstanbul</p>
           <div className="social-links">
