@@ -89,7 +89,7 @@ const SplashScreen = () => {
         <div className="splash-content">
           <h1>Barış Serhat <br />Kaplan</h1>
           <p>Junior Developer • Hakkımda daha fazla detayı aşağıda bulabilirsiniz.</p>
-          <button onClick={scrollToNext}>o</button>
+          <button onClick={scrollToNext}><strong>o</strong></button>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ const SplashScreen = () => {
         <div className="about-content">
           <img src={me} alt="Barış Serhat Kaplan" className="profile-image" onClick={goToDetails}/>
           <h2>Hakkımda</h2>
-          <p>+90 549 202 02 58 ,  bsirhatk@gmail.com, İstanbul</p>
+          <p>+90 549 202 02 58 • bsirhatk@gmail.com • İstanbul</p>
           <div className="social-links">
               <a
                 href="https://www.linkedin.com/in/bar%C4%B1%C5%9F-serhat-kaplan-15416a230/"
@@ -150,6 +150,7 @@ const SplashScreen = () => {
           {/* Projeler */}
           <div className="project-list">
             <h2>Projeler</h2>
+
             <ul>
               <li>Can we Make it More Sustainable? - Sürdürülebilirlik Araştırma Projesi</li>
               <li>Inflation vs Stock Prices Analysis - AI prediction model and Data Analiz Projesi  </li>
@@ -160,6 +161,7 @@ const SplashScreen = () => {
               <li>Drone Monitoring System – Dronelar için sensor ve dataları kontrol sistemi</li>
               <li>Country Guesser – Globle Benzeri Ülke Tahmin Oyunu</li>
             </ul>
+
           </div>
 
           {/* Deneyimler */}

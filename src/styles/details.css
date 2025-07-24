@@ -9,7 +9,7 @@
 .section {
   margin-bottom: 60px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ccc;
 }
 
 /* === 1. ABOUT === */
@@ -106,6 +106,7 @@
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 .beko img {
   width: 70px;
@@ -166,6 +167,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-top: 2px;
 }
 .header-right a{
   cursor: pointer;
@@ -202,10 +204,11 @@
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
+  padding-top: 0px
 }
 .c422 h2 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 .c42 {
   width: 200px;
@@ -261,6 +264,9 @@ html {
   font-size: 1.2rem;
   color: #111;
   padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header-right a {
@@ -296,6 +302,16 @@ html {
   padding-left: 10px;
   padding-top: 10px;
 }
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2px;
+}
+
+
 /* === Responsive === */
 @media (max-width: 768px) {
   .details-page {
@@ -423,6 +439,10 @@ html {
     padding-left: 0;
     text-align: center;
 
+  }
+  .header-right {
+    padding-left: 0;
+    justify-content: center;
   }
 }
 

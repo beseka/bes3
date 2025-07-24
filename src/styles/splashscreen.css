@@ -4,11 +4,15 @@ html, body {
   overflow-x: hidden;
 }
 
+html::selection {
+  background-color: #dad8d8; /* Sarı */
+  color: black;              /* Siyah yazı */
+}
+
 .main-wrapper {
   scroll-behavior: smooth;
 
 }
-
 .main-container,
 .about-section {
   position: relative;
@@ -39,6 +43,7 @@ html, body {
   pointer-events: none;
   opacity: 0.9;
 }
+
 .splash-background2 {
   position: absolute;
   top: 50%;
@@ -62,19 +67,21 @@ html, body {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 .about-content{
   position: relative;
   z-index: 1;
   color: white;
   text-align: left;
-  padding-left: 40%;
+  padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 20%;
-  padding-top: 15%;
+  padding-top: 22%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 
 .splash-content h1 {
@@ -132,7 +139,7 @@ html, body {
 .button-part-about {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   gap: 1rem;
 }
 .button-part-about button, .project-row button {
@@ -204,28 +211,12 @@ html, body {
 
 .project-list ul,
 .experience-list ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.6;
-}
-
-.project-list li,
-.experience-list li {
-  margin-bottom: 0.8rem;
-}
-
-.project-list li::marker,
-.experience-list li::marker {
-  color: #464646;
-}
-
-.project-list ul,
-.experience-list ul {
   list-style: none;
   padding-left: 2rem;
   position: relative;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 .project-list li {
@@ -267,6 +258,10 @@ html, body {
 .project-list li:last-child::after,
 .experience-list li:last-child::after {
   display: none; /* Son elemandan sonra çizgi olmasın */
+}
+.project-list li::marker,
+.experience-list li::marker {
+  color: #464646;
 }
 
 .experience-details{
@@ -336,7 +331,7 @@ html, body {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-
+.project-descriptions
 .skills-row {
   display: flex;
   justify-content: center;
@@ -354,6 +349,8 @@ html, body {
   cursor: pointer;
   font-size: 1rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 12px;
+  margin-right: 7px;
 }
 
 .skill-button:hover {

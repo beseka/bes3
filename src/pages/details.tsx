@@ -7,6 +7,7 @@ import gen from '../assets/images.png';
 import st from '../assets/st.png';
 import c42 from '../assets/c42.jpg';
 import { useNavigate } from 'react-router-dom';
+import favico from '../assets/favicon.jpg';
 
 const DetailsPage = () => {
     const navigate = useNavigate();
@@ -28,7 +29,8 @@ const DetailsPage = () => {
     <>
         <header className="page-header">
             <div className="header-left" style={{ cursor: 'pointer' }} onClick={go}>
-                BSK
+                <img src={favico} alt="Logo" className="logo" />
+                <div style={{ width: '1px', height: '30px', backgroundColor: '#ccc', marginLeft: '10px' }} />
             </div>
             <nav className="header-right">
                 <a onClick={() => {
@@ -82,8 +84,8 @@ const DetailsPage = () => {
             <div className='beko'>
                 <img src={beko} alt="beko" className="beko" /> 
                 <p>
-                <strong>2025 Temmuz - 2025 Eylül</strong> <br/> Beko, R&D Stajyeri
-                <br/> Mekanik Tasarımcılar için Tasarım araçlarını kolaylaştıracak bir yazılım asistanı araştırması ve geliştirilmesi.</p>
+                <strong>R&D Stajyeri, Beko</strong> <br/> 2025 Temmuz - 2025 Eylül
+                <br/> Optimum koşulları, fiyatları ML modeller ile tahmin etme ve veriye ulaşmak için arayüz geliştirilmesi. Data Science.</p>
             </div>
             </div>  
             <div className="experience-right">
@@ -92,13 +94,13 @@ const DetailsPage = () => {
                 <img src={gen} alt="Gen Academy" className="beko" /> 
                 <p>
                 <strong>Yapay Zeka ve Yazılım Teknolojileri </strong> <br/>2025 Temmuz - Gen Academy
-                <br/> Yapay Zeka hakkında makine öğrenmesi ve derin öğrenmeye giriş,  python temelli kodlama örnekleri.</p>
+                </p>
             </div>
             <div className='beko'>
                 <img src={st} alt="Softtech" className="beko" /> 
                 <p>
                 <strong>Agile 101 </strong> <br/> 2025 Mayıs - Softtech
-                <br/> Agile methodu ve methodun yazılım sektöründeki yeri ve kullanım amaçları hakkında.</p>
+                </p>
             </div>
             </div>
         </section>
@@ -121,6 +123,7 @@ const DetailsPage = () => {
                 </div>
                 ))}
             </div>
+            <br/>
         </section>
 
         {/* 4. ACTIVITIES & SKILLS */}
@@ -144,9 +147,9 @@ const DetailsPage = () => {
 
             <div className="activities-right">
                 <h2>Aktiviteler</h2>
-                <p>• Sosyal Medya Danışmanlık. <br/> DlaryaModa, Land of Burger gibi şirketler için sosyal medya stratejileri </p>
-                <p>• Kişisel veya kurumsal website yapımı ve reklam yönetimi. <br/> Ticimax ve Shopify haricinde kendi yaptığım siteler ile de website yapımı ve reklam yönetimi SEO optimizasyonu gibi hizmetler</p>
-                <p>• Mentorluk.</p>
+                <p>• <strong>Sosyal Medya Danışmanlık</strong>  <br/> DlaryaModa, Land of Burger gibi şirketler için sosyal medya stratejileri </p>
+                <p>• <strong>Kişisel veya kurumsal website yapımı ve reklam yönetimi</strong> <br/> Ticimax ve Shopify haricinde kendi yaptığım siteler ile de website yapımı ve reklam yönetimi SEO optimizasyonu gibi hizmetler</p>
+                <p>• <strong>Mentorluk</strong></p>
             </div>
 
             <div className="activities-right">
